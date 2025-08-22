@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Saira+Stencil+One&display=swap');
+
+.font-primary {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.font-secondary {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  font-style: normal;
+}
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -42,7 +58,8 @@
 }
 
 :root {
-  --radius: 0.65rem;
+  /* --radius: 0.65rem; */
+  --radius: 0px;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);

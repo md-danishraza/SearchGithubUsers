@@ -19,7 +19,7 @@ const UserCard = ({ avatarUrl, name, bio, url }: UserCardProps) => {
         <img
           src={avatarUrl}
           alt={name}
-          className='w-36 h-36  rounded object-cover'
+          className='w-36 h-36   object-cover'
         />
         <div className='flex flex-col gap-y-2'>
           <CardTitle>{name || 'name not found'}</CardTitle>

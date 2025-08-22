@@ -8,10 +8,10 @@ function App() {
   const [userName, setUserName] = useState('md-danishraza');
 
   return (
-    <main className='mx-auto max-w-6xl px-8 py-8'>
+    <main className='mx-auto max-w-6xl px-8 py-8 font-secondary'>
 
 <div className="flex justify-between items-center mb-4 ">
-  <h1 className="text-2xl font-extrabold text-primary">Github Users</h1>
+  <h1 className="text-2xl font-extrabold text-primary font-primary">Github Users</h1>
   <div>
     <ModeToggle />
   </div>

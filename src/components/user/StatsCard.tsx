@@ -8,9 +8,9 @@ type StatsCardProps = {
 function StatsCard({ title, count }: StatsCardProps) {
   return (
     <Card className='p-2'>
-      <div className='flex flex-row justify-between items-center p-4'>
+      <div className='flex flex-row justify-between items-center p-2'>
         <CardTitle>{title}</CardTitle>
-        <CardDescription className='text-primary'>{count}</CardDescription>
+        <CardDescription className='text-primary text-2xl'>{count}</CardDescription>
       </div>
     </Card>
   );

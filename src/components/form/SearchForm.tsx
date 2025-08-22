@@ -34,7 +34,7 @@ function SearchForm({userName,setUserName}:SearchFormProps) {
       value={text}
       onChange={(e) => setText(e.target.value)}
       placeholder='Search Github User...'
-      className='flex-grow bg-background'
+      className=' flex-grow bg-accent '
     />
     <Button type='submit'>Search</Button>
   </form>
