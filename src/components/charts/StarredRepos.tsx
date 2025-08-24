@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 import { type Repository } from "@/types";
 import { ResponsiveContainer } from "recharts";
