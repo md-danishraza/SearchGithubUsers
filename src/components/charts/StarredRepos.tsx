@@ -3,7 +3,7 @@ import React from 'react'
 import { type Repository } from "@/types";
 import { ResponsiveContainer } from "recharts";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
-import starImage from "public/star.png"
+import starImage from "/star.png"
 import {
   type ChartConfig,
   ChartContainer,
@@ -25,7 +25,7 @@ function StarredRepos({repositories}:{repositories:Repository[]}) {
   } satisfies ChartConfig;
 
   return (
-    <div>
+    <div className='glassmorphism py-2'>
        <div className='flex flex-row justify-center '>
        <img src={starImage} alt="" className='w-8 h-8 dark:invert'/>
       <h2 className="text-2xl font-semibold text-center mb-4">Popular Repos</h2>
@@ -38,7 +38,7 @@ function StarredRepos({repositories}:{repositories:Repository[]}) {
         {/* accessibilityLayer adds ARIA labels for better screen reader support */}
         <BarChart accessibilityLayer data={popularRepos}>
           {/* CartesianGrid: Adds horizontal guide lines (vertical disabled) */}
-          <CartesianGrid vertical={false} />
+          <CartesianGrid vertical={false}  />
 
           {/* XAxis: Horizontal axis showing repository names */}
           {/* tickFormatter truncates long repository names to 10 characters */}
@@ -46,11 +46,12 @@ function StarredRepos({repositories}:{repositories:Repository[]}) {
             dataKey="repo"
             tickLine={false}
             tickMargin={10}
+            tick={{ fill: "var(--background)", fontSize: 12 }}
             tickFormatter={(value) => value.slice(0, 10)}
           />
 
           {/* YAxis: Vertical axis showing star counts */}
-          <YAxis dataKey="stars" />
+          <YAxis dataKey="stars" tick={{ fill: "var(--background)", fontSize: 12 }}/>
 
           {/* ChartTooltip: Custom tooltip component that appears on hover */}
           {/* ChartTooltipContent: Renders the actual content inside the tooltip */}

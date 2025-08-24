@@ -10,14 +10,14 @@ function App() {
   return (
     <main className='mx-auto max-w-6xl px-8 py-4 font-secondary'>
 
-<div className="flex justify-between items-center mb-4 ">
+<div className="flex justify-between items-center mb-4">
   <h1 className="text-2xl font-extrabold text-primary font-primary">Github Users</h1>
   <div>
     <ModeToggle />
   </div>
 </div>
 <Separator className="my-4 bg-primary"/>
-      <section>
+      <section >
       <SearchForm userName={userName} setUserName={setUserName} />
       <UserProfile userName={userName} />
       </section>

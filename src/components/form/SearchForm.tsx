@@ -23,7 +23,7 @@ function SearchForm({userName,setUserName}:SearchFormProps) {
   return (
     <form
     onSubmit={handleSearch}
-    className='flex items-center gap-x-2 w-full lg:w-1/3 mb-8'
+    className='flex items-center gap-x-2 w-full lg:w-1/3 mb-8 z-10'
   >
     <Label htmlFor='search' className='sr-only'>
       Search

@@ -7,7 +7,7 @@ import { ApolloProvider } from '@apollo/client/react'
 import client from './apolloClient.ts'
 import { ThemeProvider } from './components/theming/theme-provider.tsx'
 createRoot(document.getElementById('root')!).render(
-  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+  <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
   <ApolloProvider client={client}>
     <App />
     <Toaster/>

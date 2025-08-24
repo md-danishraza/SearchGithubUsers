@@ -14,7 +14,7 @@ type UserCardProps = {
 };
 const UserCard = ({ avatarUrl, name, bio, url }: UserCardProps) => {
   return (
-    <Card className='w-full lg:w-1/2 mb-8'>
+    <Card className='w-full lg:w-1/2 mb-8 glassmorphism '>
       <CardHeader className='flex-row gap-x-8 items-center'>
         <img
           src={avatarUrl}

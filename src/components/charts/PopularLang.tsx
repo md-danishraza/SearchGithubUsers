@@ -2,7 +2,7 @@ import type { Repository } from '@/types'
 import { calculatePopularLanguages } from '@/utils'
 
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts';
-import codeImage from "public/code.png"
+import codeImage from "/code.png"
 import {
   type ChartConfig,
   ChartContainer,
@@ -25,7 +25,7 @@ function PopularLang({repositories}:{repositories:Repository[]}) {
     },
   } satisfies ChartConfig;
   return (
-    <div>
+    <div className='glassmorphism py-2'>
        <div className='flex flex-row justify-center '>
        <img src={codeImage} alt="" className='w-8 h-8 dark:invert'/>
       <h2 className='text-2xl font-semibold text-center mb-4'>

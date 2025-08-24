@@ -1,7 +1,7 @@
 import type { Repository } from '@/types'
 import { ResponsiveContainer } from "recharts";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
-import forkImage from "public/fork.png"
+import forkImage from "/fork.png"
 import {
   type ChartConfig,
   ChartContainer,
@@ -22,7 +22,7 @@ function ForkedRepos({repositories}:{repositories:Repository[]}) {
   } satisfies ChartConfig;
 
   return (
-    <div>
+    <div className='glassmorphism py-2 '>
       <div className='flex flex-row justify-center'>
       <img src={forkImage} alt="" className='w-8 h-8 dark:invert'/>
       <h2 className="text-2xl font-semibold text-center mb-4">Forked Repos</h2>

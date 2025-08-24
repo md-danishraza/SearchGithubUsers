@@ -32,7 +32,8 @@ function UserProfile({userName}:UserProfileProps) {
   } = data.user;
 
   return (
-    <div>
+    <div className='card-wrapper relative dark:text-white! '>
+      <div className="blob"></div>
       <UserCard avatarUrl={avatarUrl} name={name} bio={bio} url={url} />
       <StatsContainer
       totalRepos={repositories.totalCount}
@@ -42,7 +43,7 @@ function UserProfile({userName}:UserProfileProps) {
     />
     {
       repositories.totalCount >0 && (
-        <div className='grid md:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         <ForkedRepos repositories={repositories.nodes}/>
         <StarredRepos repositories={repositories.nodes}/>
         <PopularLang repositories={repositories.nodes}/>
