@@ -7,6 +7,7 @@ import StatsContainer from './StatsContainer';
 import ForkedRepos from '../charts/ForkedRepos';
 import StarredRepos from '../charts/StarredRepos';
 import PopularLang from '../charts/PopularLang';
+import Loading from './Loading';
 type UserProfileProps = {
     userName: string;
   };
@@ -15,7 +16,7 @@ function UserProfile({userName}:UserProfileProps) {
     variables: { login: userName },
   });
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loading/>;
   if (error) return <h2 className='text-xl'>{error.message}</h2>;
   if (!data) return <h2 className='text-xl'>User Not Found.</h2>;
 
