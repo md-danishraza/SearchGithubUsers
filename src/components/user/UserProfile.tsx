@@ -8,6 +8,7 @@ import ForkedRepos from '../charts/ForkedRepos';
 import StarredRepos from '../charts/StarredRepos';
 import PopularLang from '../charts/PopularLang';
 import Loading from './Loading';
+import CommitGraph from '../charts/CommitGraph';
 type UserProfileProps = {
     userName: string;
   };
@@ -32,7 +33,7 @@ function UserProfile({userName}:UserProfileProps) {
   } = data.user;
 
   return (
-    <div className='card-wrapper relative dark:text-white! '>
+    <div className=' dark:text-white! '>
       <div className="blob"></div>
       <UserCard avatarUrl={avatarUrl} name={name} bio={bio} url={url} />
       <StatsContainer
@@ -50,6 +51,7 @@ function UserProfile({userName}:UserProfileProps) {
       </div>
       )
     }
+    <CommitGraph username={userName}/>
     </div>
   );
 }

@@ -23,7 +23,7 @@ const UserCard = ({ avatarUrl, name, bio, url }: UserCardProps) => {
         />
         <div className='flex flex-col gap-y-2'>
           <CardTitle>{name || 'name not found'}</CardTitle>
-          <CardDescription>
+          <CardDescription className='dark:text-white'>
             {bio || 'bio not found'}
           </CardDescription>
           <Button asChild size='sm' className='w-1/2 mt-2'>

@@ -36,7 +36,7 @@ function SearchForm({userName,setUserName}:SearchFormProps) {
       placeholder='Search Github User...'
       className=' flex-grow bg-accent '
     />
-    <Button type='submit'>Search</Button>
+    <Button type='submit' className='cursor-pointer'>Search</Button>
   </form>
   )
 }

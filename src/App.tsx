@@ -17,12 +17,12 @@ function App() {
   </div>
 </div>
 <Separator className="my-4 bg-primary"/>
-      <section >
+      <section className="card-wrapper relative">
       <SearchForm userName={userName} setUserName={setUserName} />
       <UserProfile userName={userName} />
       </section>
       <footer className="pt-8 text-center text-muted">
-        @copy;2025 Developed by Danish
+        &copy;2025 Developed by Danish
       </footer>
       
     </main>
